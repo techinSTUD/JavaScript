@@ -1,0 +1,102 @@
+:root {
+    --mainBGcolor: #0d192c;
+}
+
+:root {
+    --mainCardColor: #15263f;
+}
+
+:root {
+    --mainTextColor: #FFFFFF;
+}
+
+:root {
+    --mainHoverColor: #00FFF8;
+}
+:root {
+    --textColor: #8BACD9;
+
+}
+
+
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+main {
+    width: 1440px;
+    height: 900px;
+    background-color: var(--mainBGcolor);
+    place-items: center;
+    position: relative;
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+
+}
+
+.card {
+    width: 350px;
+    height: 596px;
+    position: absolute;
+    margin: 152px 545px;
+    border-radius: 15px;
+    background: var(--mainCardColor, #15263F);
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+    display: grid; 
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% repeat(4, 1fr); */
+    gap: 5px ; 
+}
+
+.rectangle {
+    width: 302px;
+    height: 302px;
+    border-radius: 8px;
+    position: absolute;
+    margin: 24px 24px 270px 24px;
+}
+
+.rectangle:hover {
+
+    background: var(--mainHoverColor);
+    opacity: 0.303;
+}
+
+.Equilibrium:hover {
+
+    color: var(--mainHoverColor);
+    opacity: 0.303;
+}
+
+.Equilibrium {
+    font-size: 22px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: normal;
+    color: var(--mainTextColor);
+    /* grid-column: 1/2;
+    grid-row:  5/6;
+    align-self: end;
+    margin-left: 24px;
+    margin-top: 24px; */
+    width: 302px;
+    height: 28px;
+    margin: 350px 24px 218px 24px ;
+
+}
+
+.text {
+width: 302px;
+height: 52px;
+color: var(--textColor);
+font-size: 18px;
+font-style: normal;
+font-weight: 300;
+line-height: 26px;
+margin: 394px 24px 150px 24px ;
+position: absolute;
+top: 0;
+left: 0;
+
+}

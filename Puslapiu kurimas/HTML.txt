@@ -1,0 +1,101 @@
+https://www.photopea.com/
+https://pixlr.com/
+https://fonts.google.com/
+https://tinypng.com/
+https://validator.w3.org/
+https://bem-cheat-sheet.9elements.com/
+https://dev.to/muyunyun/inherited-and-non-inherited-in-css-mi4 - inherited
+https://css-tricks.com/snippets/css/complete-guide-grid/ - css grid
+
+
+
+svg preview (su zaibu)
+
+
+
+CTRL+SHIFT+P - WRAPAS
+
+inline elementas - span, img, a ir dar daug
+block elementai - h1,div, p, ir dar daug
+target="_blank" - naujam puslapy atsidarys tab
+
+grid-template-columns: 30% 30% 30%; - 90% uzima ir 10% lieka
+grid-template-columns: 1fr 1fr 1fr; - pasidalija visa galima langa polygiai
+    gap: 20px; - tarpas tarp eiluciu
+ justify-items: center; 
+align-items: center; - vertikalus  lygiavimas
+height: 50vh; - reik align-items kad veiktu vertikalus lygiavimas
+place-items: center; - justify-items: center; align-items: center; padaro ta pati
+
+
+
+
+section {
+
+            display: block;
+            content: "";
+            clear: left;
+            display: table;
+
+        }
+
+ .all {
+            width: 70%;
+            margin: 0 auto;
+        }
+
+@import css failus/fontus bele ka
+
+
+:root  {
+    --mainBGcolor: #0d192c;	--- root teisinga sintakse
+} 
+
+
+.rectangle:hover {
+
+    background: var(--mainHoverColor); --- Hover effect
+    opacity: 0.303;
+}
+
+
+.bigone {			---	grid column row nurodymas
+    grid-column: 1/2;
+    grid-row: 1/3;
+    margin: 30px;
+}
+
+----------------------------------flex tarpai tarp divu css----------------------------------------------------
+*{
+    box-sizing: border-box;
+}
+
+
+
+section {
+    background-color: rgb(15, 142, 132);
+    padding: 1rem;
+    height: 50vh;
+    display: flex;
+    flex-wrap:wrap ;
+    /* flex-wrap: wrap;
+    justify-content: space-around; */
+    align-items: center;
+
+
+
+
+}
+
+section div {
+    /* background-color: rgb(214, 226, 43); */
+    padding: 1rem;
+    width: 33%;
+}
+section p {
+    background-color: aliceblue;
+    padding: 1rem;
+}
+
+--------------------------------------------------------------------------------------------------------------------
+flex-grow - uzpildo visa laisva space

@@ -1,0 +1,66 @@
+.site-logo span {
+    color: #ffa500;
+    font-weight: 700;
+}
+
+.background-header {
+
+    width: 100%;
+
+    padding-top: 100px;
+    padding-bottom: 100px;
+    margin: 0 auto;
+    color: #ffffff;
+    overflow: hidden;
+    background: #489ac0;
+    /* fallback for old browsers */
+    background: linear-gradient(rgba(0, 5, 72, 0.8), rgba(72, 182, 192, 0.8)), url("images/header.webp");
+    /* Chrome 10-25, Safari 5.1-6 */
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+h1 {
+    width: 100%;
+    text-align: left;
+    font-size: 2rem;
+
+}
+
+.track-bar {
+    text-align: left;
+
+}
+
+.track-bar :nth-child(2) {
+    text-align: left;
+    background-color: #ffa500;
+    color: #ffffff !important;
+    font-size: 1rem;
+}
+
+h3 a, h4 {
+    color: #ffa500 !important;
+}
+
+.cards-on-top {
+    position: relative;
+    top: -30px;
+}
+
+.card, .offer {
+ 
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.offer p {
+    margin: 0 auto;
+    margin-bottom: 10%;
+}
+
+i {
+    display: inline-block;
+    width: 30px;
+  }

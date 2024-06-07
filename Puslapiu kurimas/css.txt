@@ -1,0 +1,36 @@
+https://dev.to/muyunyun/inherited-and-non-inherited-in-css-mi4 - inherited
+https://css-tricks.com/snippets/css/complete-guide-grid/ - css grid
+
+
+
+*{
+    box-sizing: border-box;
+}
+
+
+section {
+    background-color: blanchedalmond;
+    height: 50vh;
+    display: grid;
+    /* grid-template-columns: 30% 30% 30%; */
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+}
+article {
+    background-color: cadetblue;
+    border: 1px solid whitesmoke;
+}
+
+
+grid-template-columns: 30% 30% 30%; - 90% uzima ir 10% lieka
+grid-template-columns: 1fr 1fr 1fr; - pasidalija visa galima langa polygiai
+    gap: 20px; - tarpas tarp eiluciu
+ justify-items: center; 
+align-items: center; - vertikalus  lygiavimas
+height: 50vh; - reik align-items kad veiktu vertikalus lygiavimas
+place-items: center; - justify-items: center; align-items: center; padaro ta pati
+
+
+

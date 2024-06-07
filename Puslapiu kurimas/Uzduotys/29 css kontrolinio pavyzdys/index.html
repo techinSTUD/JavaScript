@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="Vardenis Pavardenis" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>CSS kontrolinio darbo užduotis</title>
+
+    <!-- google šriftai -->
+  </head>
+
+  <body>
+    <!-- header dalis -->
+    <header class="container-fluid text-start">
+      <!-- logotipas -->
+      <div class="row">
+        <div class="col-3">
+          <div class="site-logo text-center">
+            <a class="navbar-brand" href="index.html"><span>LOGO</span></a>
+          </div>
+        </div>
+        <div class="col-9">
+          <!-- meniu -->
+          <nav
+            class="navbar navbar-expand-sm navbar-light bg-body-tertiary justify-content-between p-3"
+          >
+            <div class="container row justify-content-between">
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse justify-content-center">
+                <ul class="navbar-nav me-auto">
+                  <li class="nav-item active col">
+                    <a class="nav-link" aria-current="page" href="#home-section"
+                      >Home</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#services-section">Services</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#why-us-section">Why Us</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#testimonials-section"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#blog-section">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#contact-section">Contact</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- mėlyna dalis su tekstu ir forma -->
+    <div class="background-header">
+      <h1 class="text-center mb-5">
+        Choose Your Quality Delivery <br />
+        of Your Cargo
+      </h1>
+      <form action="#">
+        <div class="track-bar text-center">
+          <input type="text" placeholder="Enter your tracking number" />
+          <input type="submit" value="Track Now" />
+        </div>
+      </form>
+    </div>
+
+    <!-- trys paveikslėliai su tekstais, užeinantys ant mėlyno bloko -->
+
+    <div class="cards-on-top">
+      <div class="container row m-auto text-wrap text-center">
+        <div class="col-md-4 border-0">
+          <img
+            class="img-fluid"
+            src="images/cargo_delivery_small.jpg"
+            class="card-img-top"
+            alt="Image"
+          />
+          <h3><a href="#">Sea Freight</a></h3>
+          <div class="card-body">
+            <p class="card-text">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 border-0">
+          <img
+            class="img-fluid"
+            src="images/cargo_air_small.jpg"
+            class="card-img-top"
+            alt="Image"
+          />
+          <h3><a href="#">Air Freight</a></h3>
+          <div class="card-body">
+            <p class="card-text text-center">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 border-0">
+          <img
+            class="img-fluid"
+            src="images/cargo_sea_small.jpg"
+            class="card-img-top"
+            alt="Image"
+          />
+          <h3><a href="#">Package Forwarding</a></h3>
+          <div class="card-body">
+            <p class="card-text">
+              Far far away, behind the word mountains, far from the countries
+              Vokalia and Consonantia.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- paslaugų sritis su tekstu ir 6 dėžutėmis "What we offer" -->
+    <div class="container row p-3 mb-2 m-auto bg-light text-dark">
+      <div class="offer col-md-12 col-sm-12">
+        <h2 class="text-warning text-center">What We Offer</h2>
+        <p class="text-center">
+          Far far away, behind the word mountains, far from the countries
+          Vokalia and <br />
+          Consonantia, there live the blind texts.
+        </p>
+      </div>
+      <!-- 1 dėžutė -->
+
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="px-2"><img src="images/ship-1.svg" alt="" /></span>
+        <!-- << ikona -->
+        <h3 class="card-body px-2">Sea Freight</h3>
+        <p class="px-2">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+      <!-- 2 dėžutė -->
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="px-2"> <img src="images/air-2.svg" alt="" /></span>
+        <!-- << ikona -->
+        <h3 class="px-2">Air Freight</h3>
+        <p class="px-2">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+      <!-- 3 dėžutė -->
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="px-2"><img src="images/package-3.svg" alt="" /> </span>
+        <!-- << ikona -->
+        <h3 class="px-2">Package Forwarding</h3>
+        <p class="px-2">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+      <!-- 4 dėžutė -->
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="px-2"> <img src="images/truck-4.svg" alt="" /></span>
+        <!-- << ikona -->
+        <h3 class="px-2">Trucking</h3>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+      <!-- 5 dėžutė -->
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="px-2"> <img src="images/warehouse-5.svg" alt="" /></span>
+        <!-- << ikona -->
+        <h3 class="px-2">Warehouse</h3>
+        <p class="px-2">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+      <!-- 6  dėžutė -->
+      <div class="card col-md-6 col-lg-4" style="width: 15rem">
+        <span class="flaticon-add px-2"
+          ><img src="images/delivery-6.svg" alt=""
+        /></span>
+        <!-- << ikona -->
+        <h3 class="px-2">Delivery</h3>
+        <p class="px-2">
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia.
+        </p>
+      </div>
+    </div>
+
+    <!-- sritis "Why Us" : dešinėj paveikslėlis, kairėje tekstas -->
+
+    <!-- paveikslėlis -->
+    <div style="background-image: url('images/cargo_sea_small.jpg')"></div>
+
+    <!-- teksto blokas -->
+    <div class="container row p-3 mb-2 m-auto justify-content: space-between">
+      <div class="col-sm-6 col-md-6 col-lg-6">
+        <h2>Why Us</h2>
+        <h4>We work quickly and efficiently!</h4>
+        <p>
+          A small river named Duden flows by their place and supplies it with
+          the necessary regelialia. It is a paradisematic country, in which
+          roasted parts of sentences fly into your mouth.
+        </p>
+
+        <ul class="list-unstyled">
+          <li>
+            <img src="images/check-solid.svg" class="img-fluid p-2" alt="">Express
+          </li>
+          <li>
+            <img src="images/check-solid.svg" class="img-fluid p-2" alt="">Secure
+            Services
+          </li>
+          <li>
+            <img src="images/check-solid.svg" class="img-fluid p-2" alt="">Secure
+            Warehouseing
+          </li>
+          <li>
+            <img src="images/check-solid.svg" class="img-fluid p-2" alt="">Cost savings
+          </li>
+          <li >
+            <img src="images/check-solid.svg" class="img-fluid p-2" alt="">Proven by
+            great companies
+          </li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-md-6 col-lg-6 justify-self p-0">
+        <img src="images/person_2.jpg" class="img-fluid" alt="" />
+      </div>
+    </div>
+
+    <!-- footer dalis -->
+    <footer>
+      <p class="text-center text-white bg-dark">
+        &copy;
+        <script>
+          document.write(new Date().getFullYear());
+        </script>
+        All Rights Reserved. Design by Gintaras Jezepcikas, VTMC
+      </p>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

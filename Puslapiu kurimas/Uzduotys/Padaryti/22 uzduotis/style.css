@@ -1,0 +1,129 @@
+body {
+    width: 100%;
+    position: relative;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+/* #main {
+    display: flex;
+    flex: 1;
+    flex-direction: column; */
+
+h1,
+h2 {
+    font-family: cursive;
+    font-style: italic;
+    margin: 0 auto;
+    padding: 10px;
+    color: #803eb6;
+}
+
+h2 {
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
+}
+
+h4 {
+    /* z-index: 1; */
+    text-align: center;
+    position: absolute;
+    color: #ffffff;
+    margin-top: 25%;
+    font-size: 2rem;
+}
+
+
+.topnav {
+    background-color: #844dbf;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+
+
+}
+
+.topnav a {
+    float: left;
+    color: #c3bfc4;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.topnav a:hover {
+    background-color: #2f0057;
+    color: #70627b;
+}
+
+.cover-img {
+    width: 100%;
+    height: auto;
+    display: flex;
+    place-items: center;
+}
+
+.list-img img {
+    width: 200px;
+    place-items: center;
+    grid-column: 1/3;
+    grid-row: 1/3;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    object-fit: contain;
+
+
+
+}
+
+
+p,
+h3,
+.box-1 {
+    margin: 0 auto;
+    font-size: 1.3rem;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+    .box-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .topnav {
+      
+        justify-content:space-around;
+        flex-direction: row;
+        flex-wrap:wrap;
+    
+    }
+}
+
+@media  (min-width: 1024px) and (max-width: 1440px) {
+    .box-1 {
+        flex-direction: row;
+        align-items: center;
+    }
+    .topnav {
+      
+        justify-content:space-around;
+        flex-direction: row;
+        flex-wrap:wrap;
+    
+    }
+    body {
+        width: 1440px;
+        position: relative;
+        border: 3px solid black;
+        margin: 0 auto;
+    }
+}

@@ -1,0 +1,75 @@
+node -v --- patikrinam versija
+node main.js - paleidzia main.js (terminale)
+
+<script src="main.js"></script> - prisegam js prie html, pries uzdarant body
+<script src="main.js" defer></script> --- jeigu segam i head, defer atideda uzkrovima js
+------------------------------------------------------------------
+let a = 56;
+let b = a + 16;
+console.log(b); - isvestis per console.log
+------------------------------------------------------------------
+let a, b
+a = 5
+b = a + 23
+console.log(b);
+------------------------------------------------------------------
+"use strict"; - klaidu pranesimai consolej
+
+let coordMapBest - inicijavimas
+let coordMapBest = 5; - deklaravimas
+--------------------------------------------------------------------
+let a, b, x;
+
+
+a = +prompt("Iveskite pirma kampa ?");
+b = +prompt("Iveskite antra kampa ?");
+x = (180  - (a + b));
+console.log("Ivesta: " + "a: " + a + ' b: ' + b + " Kampas c lygus: " + x);
+--------------------------------------------------------------------
+"use strict";
+
+let takeOfHours = +prompt("Lektuvo pakilimas: Valandos");
+let takeOfMinutes = +prompt("Lektuvo pakilimas: minutes");
+let tripDuration = +prompt("Kiek truks kelione minutemis?");
+
+let landingTime = takeOfHours * 60 + takeOfMinutes + tripDuration;
+let landingHours = landingTime / 60;
+let landingMinutes = landingTime % 60;
+
+
+let hours = Math.floor(landingHours) % 24;
+
+console.log(`${hours}:${landingMinutes}`);
+--------------------------------------------------------------------
+<div id ="data"></div> - sukuriam div html kad galetume irasyt
+
+"use strict";
+
+
+let movieHours = +prompt("Filmo pradzia: valandos");
+let movieMin = +prompt("Filmo pradzia: minutes");
+let movieTimeHours = +prompt("Filmo trukme: Valandos");
+let movieTimeMin = +prompt("Filmo trukme: minutes");
+let advertise = 3 * 10;
+let endTime = (movieHours * 60) + movieMin;
+let endTimeHours = endTime / 60
+let endTimeMinutes = movieMin%60;
+let hours = Math.floor(endTimeHours) % 24;
+
+
+console.log(`Ivesta: Filmo pradzia ${movieHours}:${movieMin}, trukme ${movieTimeHours}:${movieTimeMin}.`);
+console.log(`Gauta: Filmas pasibaigs ${hours+movieTimeHours}:${movieMin+movieTimeMin+advertise} .`);
+
+document.querySelector(`#data`).innerHTML = `Gauta: Filmas pasibaigs ${hours+movieTimeHours}:${movieMin+movieTimeMin+advertise} .`; --- isves i html
+--------------------------------------------------------------------------------------------------------
+"use strict";
+
+let n = +prompt("Iveskite degtuku kieki");
+
+if (n % 4 ==0) {						---kvadrato suradimas su modal
+    console.log(`Ivesta: ${n}`);
+    console.log(`Gauta: Kvadrata sudaryti galima`);
+}
+else {
+    console.log(`Kvadrato sudaryti negalima`);
+}

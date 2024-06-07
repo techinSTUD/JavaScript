@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formos</title>
+
+    <style>
+      body {
+        font-family: sans-serif;
+        text-align: left;
+        padding: 0 20%;
+      }
+
+      h1 {
+        margin-bottom: 0;
+        text-align: left;
+      }
+      p {
+        margin-top: 5px;
+        text-align: left;
+        font-size: larger;
+      }
+      th {
+        margin-right: 20px;
+      }
+      .buttons {
+        text-align: center;
+        padding: 0 20%;
+      }
+      td {
+        margin: 10px;
+        padding: 10px;
+      }
+      input {
+        padding: 3px;
+        margin: 3px;
+      }  
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Dance Registration</h1>
+      <p>
+        Fill the registration form below keenly to enter the dancing
+        competition.
+      </p>
+    </header>
+    <hr />
+    <form>
+      <table>
+        <tr>
+          <th>Name</th>
+
+          <td>
+            <input type="text" name="firstname" placeholder="First Name" />
+            <input type="text" name="lastname" placeholder="Last Name" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>E-mail</th>
+          <td>
+            <input
+              type="email"
+              name="email"
+              placeholder="ex: myname@example.com"
+            />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Phone Number</th>
+          <td>
+            <input type="tel" name="tel" placeholder="Area Code" />
+            <span>-</span>
+            <input type="tel" name="tel" placeholder="Phone Code" />
+          </td>
+        </tr>
+        <tr>
+          <th>Gender</th>
+          <td>
+            <input type="radio" name="sex" value="male" checked />Male
+            <input type="radio" name="sex" value="female" />Female
+          </td>
+        </tr>
+
+        <tr>
+          <th>Address</th>
+          <td>
+            <input type="text" name="street" placeholder="Street Address" />
+            <br />
+            <input
+              type="text"
+              name="street"
+              placeholder="Street Address Line 2"
+            />
+            <br />
+            <input type="text" name="city" placeholder="City" />
+            <input type="text" name="state" placeholder="State / Province" />
+            <br />
+            <input type="text" name="postal" placeholder="Postal / Zip Code" />
+          </td>
+        </tr>
+      </table>
+      <div><hr /></div>
+      <table>
+        <tr>
+          <th>Type of Dance</th>
+          <td>
+            <input type="radio" name="type" />Salsa <br />
+            <input type="radio" name="type" />Bachata <br />
+            <input type="radio" name="type" />Tango <br />
+            <input type="radio" name="type" />Hip Hop <br />
+            <input type="radio" name="type" />Club <br />
+            <input type="radio" name="type" />
+            <input type="text" name="type" placeholder="Other" />
+          </td>
+        </tr>
+
+        <tr>
+          <th>Start Day & Time</th>
+          <td>
+            <input type="datetime-local" name="start" />
+          </td>
+        </tr>
+        <tr>
+          <th>Comments</th>
+          <td>
+            <textarea
+              name="Comments"
+              cols="50"
+              rows="7"
+              placeholder="Leave comment here..."
+            ></textarea>
+          </td>
+        </tr>
+      </table>
+      <div class="buttons">
+        <input type="submit" value="Submit" />
+        <input type="reset" title="Resets all info!!!" />
+      </div>
+    </form>
+  </body>
+</html>

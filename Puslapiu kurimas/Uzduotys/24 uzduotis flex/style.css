@@ -1,0 +1,29 @@
+*{
+    box-sizing: border-box;
+}
+
+
+body {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.dog {
+    justify-self: center;
+}
+.cover {
+    justify-self: center;
+}
+
+
+
+.flex-form>* {
+    font-size: 1.3rem;
+    padding: 10px;
+    flex-grow: 1;
+    
+    
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML sąrašai</title>
+
+    <style>
+      .all {
+        list-style-image: url(images/icons8-red-dot-48.jpg);
+      }
+    </style>
+  </head>
+
+  <body>
+    2 Numeruotus sąrašus:
+    <dl>
+      <dt>Preceeding Text</dt>
+      <dd>List Header</dd>
+    </dl>
+
+    <ol>
+      <li>List item 1</li>
+      <li>List item 2</li>
+    </ol>
+    <hr />
+    <p>Preceeding Text</p>
+    <ol style="list-style-type: upper-roman">
+      <li>
+        List Item 1.
+        <ol type="a">
+          <li>Nested List 1</li>
+          <li>Nested List 2</li>
+        </ol>
+      </li>
+      <li>
+        List Item 2.
+        <ul style="list-style-type: disc">
+         <li> Nested List Item 1</li>
+        </ul>
+      </li>
+    </ol>
+    <hr />
+    Aprašymo sąrašą:
+    
+      <p>Preceeding Text List Header</p>
+      <dl>
+      <dt>List item 1</dt>
+      <dd>Description of List item 1.</dd>
+      <dt>List item 2</dt>
+      <dd>Description of List item 2.</dd>
+    </dl>
+    <hr />
+    Sąrašą su išvardijimo simboliu:
+
+    <ul>
+      <li style="list-style-type: circle">List item</li>
+      <li>List item</li>
+      <li style="list-style-type: square">List item</li>
+    </ul>
+
+    <hr />
+    Sąrašą su paveiksliukais:
+   <p>Preceeding Text List Header</p>
+    <ul class="all">
+      <li>List item 1.</li>
+      <li>List item 2.</li>
+    </ul>
+
+    <hr />
+  </body>
+</html>

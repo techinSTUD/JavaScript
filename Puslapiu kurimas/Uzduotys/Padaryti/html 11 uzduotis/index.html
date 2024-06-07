@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lentele</title>
+
+    <style>
+
+        table {
+            border-collapse: collapse;
+        }
+
+
+        tr,
+        th,
+        td {
+            /* border: 1px solid #96d4d4; 
+             border-collapse: collapse; */
+            padding: 10px 50px;
+            
+        }
+
+        caption {
+            text-align: left;
+            font-weight: 900;
+            font-size: larger;
+            width: 80%;
+        }
+
+        img {
+            border-radius: 50%;
+            width: 50px;
+            display: flex;
+            align-items: center;
+        }
+        .spanactive {
+            color: #008000;
+            background-color: rgba(172, 255, 47, 0.123);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 1px;
+        }
+
+        .spanoffline {
+            color: #808080;
+            background-color: rgba(107, 107, 106, 0.123);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 1px;  
+        }
+        .spaninnactive, .Marketing {
+            color: #ffa500;
+            background-color: rgba(181, 226, 92, 0.226);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 1px; 
+        }
+        .spandev {
+            color: #0000ffa3;
+            background-color: rgba(181, 226, 92, 0.226);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px; 
+            margin: 1px;  
+        }
+        .spanQA {
+            color: #ff0000;
+            background-color: rgba(226, 157, 92, 0.226);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 1px;
+        }
+        .spanDesign {
+            color: violet;
+            background-color: rgba(226, 92, 210, 0.226);
+            font-weight: 900;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 1px;
+        }
+        caption{
+            width: 100%;
+            border-bottom: 2px solid rgba(128, 128, 128, 0.373);
+            
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <table>
+            
+        <caption>Team Members (7) Members</caption>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th></th>
+                <th>Status</th>
+                <th>Email address</th>
+                <th>Tags</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr style="background-color: #96d4d47e;">
+                <td><img src="images/man.png" alt="foto" title="James" /> </td>
+                <td>
+                    James
+                    Alexander <br />
+                    @james
+                </td>
+                <td><span class="spanactive">active</span></td>
+                <td>james@example.com</td>
+                <td><span class="spandev">Dev</span> <span class="spanQA">QA</span></td>
+            </tr>
+
+            <tr style="background-color: #96d4d441;">
+                <td><img src="images/woman.png" alt="Lilia" title="Lilia" /></td>
+                <td>
+                    Lilia Taylor
+                    <br />
+                    @lilia
+                </td>
+                <td> <span class="spanactive">active</span></td>
+                <td>lilia@example.com</td>
+                <td><span class="spanDesign">Design</span>  <span class="spaninnactive">Marketing</span></td>
+            </tr>
+
+            <tr style="background-color: rgba(255, 166, 0, 0.21);">
+                <td><img src="images/man.png" alt="Drew" title="Drew" /></td>
+                <td>
+                    Drew Cano
+                    <br />@drew
+                </td>
+                <td><span class="spaninnactive">inactive</span></td>
+                <td>drew@example.com</td>
+                <td><span class="spanDesign">Design</span> <span class="spaninnactive">Marketing</span></td>
+            </tr>
+
+            <tr style="background-color: #80808039;">
+                <td> <img src="images/man.png" alt="Nate" title="Nate" /></td>
+                <td>
+                   Nate Conor
+                    <br />@nate
+                </td>
+                <td><span class="spanoffline">offline</span></td>
+                <td>nate@example.com</td>
+                <td><span class="spandev">Dev</span></td>
+            </tr>
+
+            <tr style="background-color: #96d4d47e;">
+                <td><img src="images/woman.png" alt="Melissa" title="Melissa" /></td>
+                <td>
+                    Melissa
+                    Brantley <br />@melissa
+                </td>
+                <td> <span class="spanactive">active</span></td>
+                <td>melissa@example.com</td>
+                <td><span class="spaninnactive">Marketing</span></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
